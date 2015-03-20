@@ -1,0 +1,212 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	background: #eee;
+	color: #444;
+}
+
+body, html {
+	height: 100%;
+}
+
+.stats p {
+	margin: 20px 0px 10px 0px;
+}
+
+h3 {
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.entry {
+	position: relative;
+	background: #fff;
+	width: 370px;
+	padding: 16px;
+	border: solid 1px #e8e8e8;
+	border-radius: 5px;
+	float: left;
+	margin: 8px;
+	box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.36);
+	background-position: center; 
+}
+
+.highlight {
+	color: #f39c12;
+	-webkit-animation: pulsate 1s ease-out infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {border-color: #e8e8e8; }
+    50% { border-color: #f39c12;}
+    100% {border-color: #e8e8e8; }
+}
+
+.seismic {
+	color: #2980b9;
+	-webkit-animation: seismic 1s ease-out infinite;
+}
+
+@-webkit-keyframes seismic {
+    0% {border-color: #e8e8e8; }
+    50% { border-color: #2980b9;}
+    100% {border-color: #e8e8e8; }
+}
+
+.canada {
+	-webkit-animation: canada 1s ease-out infinite;
+}
+
+@-webkit-keyframes canada {
+    0% {border-color: #e8e8e8; }
+    50% { background: url('../img/flag.png'); background-size: cover; background-position: center; }
+    100% {border-color: #e8e8e8; }
+}
+
+.entry img {
+	width: 80px;
+	padding: 10px;
+	float:left;
+}
+
+.header {
+	height: 60px;
+	display: flex;
+    align-items: center;
+}
+
+.info {
+	margin-left: 80px;
+}
+
+.name, .date {
+	display: inline;
+}
+
+.stats {
+	width: 250px;
+	background: #333;
+	height: 100%;
+	position:fixed;
+	color: #eee;
+	padding: 20px;
+}
+
+.stats ul {
+	list-style: none;
+	margin-left: 15px;
+}
+
+.stats ul li {
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative;
+}
+
+.stats ol {
+	margin-left: 30px;
+}
+
+.stats ol li {
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative;
+}
+
+.stats div {
+	margin-top: 50px;
+	border-top: solid 1px #eee;
+}
+
+.check {
+	position: absolute;
+	top: 5px;
+	left: 72px;
+}
+
+.wrapper {
+	margin-left: 260px;
+	display:none;
+}
+
+.salt {
+	position: absolute;
+	top: -80px;
+	left: -80px;
+	width: 60px;
+    -webkit-animation:spin 5s linear 1;
+    -moz-animation:spin 5s linear 1;
+    animation:spin 5s linear 1;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 
+	100% { -webkit-transform: rotate(360deg); top: 90%; left: 90%;} 
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*
+================= Loader =====================*/
+
+.loader{
+	position: relative;
+	width: 12px;
+	height: 12px;
+
+	top: 46%;
+	top: -webkit-calc(50% - 6px);
+	top: calc(50% - 6px);
+	left: 46%;
+	left: -webkit-calc(50% - 6px);
+	left: calc(50% - 6px);
+	
+	border-radius: 12px;
+	background-color: #333;
+	-webkit-transform-origin:  50% 50%;
+			transform-origin:  50% 50% ;
+	-webkit-animation: loader 1s ease-in-out infinite;
+			animation: loader 1s ease-in-out infinite;
+}
+
+.loader:before{
+	content: "";
+	position: absolute;
+	background-color: rgba(51, 51, 51, .5);
+	top: 0px;
+	left: -25px;
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+}
+
+.loader:after{
+	content: "";
+	position: absolute;
+	background-color: rgba(51, 51 ,51 ,.5);
+	top: 0px;
+	left: 25px;
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+}
+
+
+@-webkit-keyframes loader{
+    0%{-webkit-transform:rotate(0deg);}
+    50%{-webkit-transform:rotate(180deg);}
+    100%{-webkit-transform:rotate(180deg);}
+}
+
+@keyframes loader{
+    0%{transform:rotate(0deg);}
+    50%{transform:rotate(180deg);}
+    100%{transform:rotate(180deg);}
+}
