@@ -11,6 +11,8 @@ borders to special drops.
 
 For the newbs, the main code is under the 'js' folder.
 
+Hosted live over at: http://yakcity.be/droplog/
+
 ## Contact
 
 PM: Chet Faker
