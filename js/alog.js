@@ -18,7 +18,7 @@ $(document).ready(function() {
 		"Joe_Senpai", "Kilts", "Leslie_Meow", "Huntah", "Reapers", "Qtto", "Vikings_Call", "Maylee_bro",
 		"NattyNomaly", "Michael7050", "Villem", "Sneakygamer", "Pryo", "Sir Xanorth", "Shadow Gold", "Fosta",
 		"Soya", "Sleepy_Borat", "Kook", "Irondangart", "Smark", "CalculaTHOR", "Tentacruelty", "Royal_Huff"
-	];
+	];git
 	//List of boss pets to check when to highlight logs.
 	var bosspets = ["Queen Black Dragon scale", "Giant Feather", "Auburn lock", "Decaying tooth", "Severed hoof", "Blood-soaked feather", "Rotten fang",
 		"Volcanic shard", "King black dragon scale", "Kalphite egg", "Kalphite claw", "Corporeal bone", "Ribs of chaos", "Corrupted Ascension signet", "Shrivelled dagannoth claw",
