@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Yakcity</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 <body>
 	<div class="stats">

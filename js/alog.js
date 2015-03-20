@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	console.log('wat');
 	var parseRSS = function(paramsObj) {
 		var base = "https://ajax.googleapis.com/ajax/services/feed/load",
 			params = "?v=1.0&num=" + paramsObj.count + "&callback=?&q=" + paramsObj.url,
@@ -137,6 +138,10 @@ $(document).ready(function() {
 		});
 	}
 
+	function onlyUnique(value, index, self) {
+		return self.indexOf(value) === index;
+	}
+
 	function countSalt() {
 		var luckyBastards = [];
 		$('.entry').each(function(i, elem) {
@@ -145,9 +150,7 @@ $(document).ready(function() {
 			);
 		});
 
-		function onlyUnique(value, index, self) {
-			return self.indexOf(value) === index;
-		}
+
 
 		var uniqueBastards = luckyBastards.filter(onlyUnique);
 
@@ -166,11 +169,4 @@ $(document).ready(function() {
 			});
 		}
 	}
-
-	$(document).on('click', '.entry', function() {
-		var name = $(this).find('.name').text();
-		if (name == "Danie") {
-			$('body').append('<img class="salt" src="img/salt.png"/>');
-		}
-	});
 });
