@@ -1,4 +1,7 @@
 <?php
+/*
+This shit runs every day at 23:59 as a task on the webserver. All it does is +1 to everyone in the salt database.
+*/
 include('connect.php');
 
 $sql = "SELECT * FROM `salt`";

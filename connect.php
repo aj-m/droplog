@@ -1,5 +1,5 @@
 <?php
-//Credentials
+//Credentials for db, placeholders for GitHub doe.
 $host = "localhost";
 $username = "poop";
 $password = "poop";

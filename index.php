@@ -18,24 +18,24 @@
 		<div class='message'>
 			<p>Salt Ranking:</p>
 				<ol>
-		<?php
-		include('connect.php');
+				<?php
+				//This pooopy snippet loads the salt ranking on the frontpage
+				include('connect.php');
 
-		$sql = "SELECT * FROM `salt` ORDER BY `salt`.`salt_level`  DESC LIMIT 5";
-		$result = $con->query($sql) or die("oops: ". $con->error);
+				$sql = "SELECT * FROM `salt` ORDER BY `salt`.`salt_level`  DESC LIMIT 5";
+				$result = $con->query($sql) or die("oops: ". $con->error);
 
-		while($row = $result->fetch_array()){
-	    	$saltname = $row[1];
-	    	$saltrank = $row[2];
-	    	if($saltrank == 1){
-	    		echo "<li>$saltname - $saltrank day</li>";
-	    	}else{
-				echo "<li>$saltname - $saltrank days</li>";
-	    	}
-	    	
-	    }
-
-		?>
+				while($row = $result->fetch_array()){
+			    	$saltname = $row[1];
+			    	$saltrank = $row[2];
+			    	if($saltrank == 1){
+			    		echo "<li>$saltname - $saltrank day</li>";
+			    	}else{
+						echo "<li>$saltname - $saltrank days</li>";
+			    	}
+			    	
+			    }
+				?>
 			</ol>
 		</div>
 	</div>
