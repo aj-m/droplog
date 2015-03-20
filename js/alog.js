@@ -22,7 +22,7 @@ $(document).ready(function() {
 	//List of boss pets to check when to highlight logs.
 	var bosspets = ["Queen Black Dragon scale", "Giant Feather", "Auburn lock", "Decaying tooth", "Severed hoof", "Blood-soaked feather", "Rotten fang",
 		"Volcanic shard", "King black dragon scale", "Kalphite egg", "Kalphite claw", "Corporeal bone", "Ribs of chaos", "Corrupted Ascension signet", "Shrivelled dagannoth claw",
-		"dagannoth egg", "dagannoth scale", "Ancient artefact", "Ancient summoning stone", "Araxyte egg", "Vitalis"
+		"dagannoth egg", "dagannoth scale", "Ancient artefact", "Araxyte egg", "Vitalis"
 	];
 	var extraclass = "";
 
