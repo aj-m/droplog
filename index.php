@@ -20,6 +20,7 @@
 				<ol>
 				<?php
 				//This pooopy snippet loads the salt ranking on the frontpage
+				/*
 				include('connect.php');
 
 				$sql = "SELECT * FROM `salt` ORDER BY `salt`.`salt_level`  DESC LIMIT 5";
@@ -35,6 +36,7 @@
 			    	}
 			    	
 			    }
+			    */
 				?>
 			</ol>
 		</div>
@@ -44,7 +46,6 @@
 <!-- Javascript -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-<script src="js/moment.js"></script>
 <script src="js/alog.js"></script>
   <script type="text/javascript">
 
