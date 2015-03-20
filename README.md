@@ -9,6 +9,8 @@ it pulls the Adventure Log RSS Feed for those people. Once it has the last 10 en
 After displaying the logs, there is some post-processing like sorting on date and adding highlight
 borders to special drops.
 
+For the newbs, the main code is under the 'js' folder.
+
 ## Contact
 
 PM: Chet Faker
