@@ -17,7 +17,7 @@ $(document).ready(function() {
 	var names = ["Danie", "DoSlayer", "Chet_Faker", "Based_Breezy", "Dyn_Asty", "PantsuOnHead",
 		"Joe_Senpai", "Kilts", "Leslie_Meow", "Huntah", "Reapers", "Qtto", "Vikings_Call", "Maylee_bro",
 		"NattyNomaly", "Michael7050", "Villem", "Sneakygamer", "Pryo", "Sir Xanorth", "Shadow Gold", "Fosta",
-		"Soya", "Sleepy_Borat", "Kook", "Irondangart", "Smark", "CalculaTHOR", "Tentacruelty", "Royal_Huff"
+		"Soya", "Sleepy_Borat", "Kook", "Irondangart", "Smark", "CalculaTHOR", "Tentacruelty", "Royal_Huff", "DeItoran"
 	];git
 	//List of boss pets to check when to highlight logs.
 	var bosspets = ["Queen Black Dragon scale", "Giant Feather", "Auburn lock", "Decaying tooth", "Severed hoof", "Blood-soaked feather", "Rotten fang",
